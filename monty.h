@@ -1,11 +1,11 @@
-#ifndef MONTY_H
-#define MONTY_H
+#ifndef _MONTY_H_
+#define _MONTY_H_
 
+#include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
 #include <sys/stat.h>
 #include <sys/types.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include <fcntl.h>
 #include <ctype.h>
 

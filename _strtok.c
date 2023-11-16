@@ -34,7 +34,7 @@ char *_strtok(char *str, char *d)
 			str = str + j;
 			return (str);
 		}
-		else if (_search(d, s[i]) == 1)
+		else if (_search(d, str[i]) == 1)
 		{
 			j++;
 			i++;
