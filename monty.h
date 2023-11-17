@@ -74,6 +74,7 @@ void _stack(stack_t **head, unsigned int line_number);
 void _add(stack_t **head, unsigned int line_number);
 void _nop(stack_t **head, unsigned int line_number);
 
+FILE *file_check(int ac, char *av[]);
 void (*find_opcode(char *opc))(stack_t **stack, unsigned int line_number);
 
 /* FREE GLOBAL VARIABLES FUNCTION */
@@ -86,8 +87,8 @@ char *_strtok(char *str, char *d);
 int _strcmp(char *s1, char *s2);
 
 /* LNKED LIST FUNCTION PROTOTYPES */
-void freeList(stack_t *head);
 stack_t *appendNode(stack_t **head, const int n);
 stack_t *prependNode(stack_t **head, const int n);
+void freeList(stack_t *head);
 
 #endif
